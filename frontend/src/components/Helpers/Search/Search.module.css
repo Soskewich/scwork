@@ -1,0 +1,28 @@
+.search {
+    grid-area: search;
+    align-self: center;
+    width: 660px;
+    padding: 5px 10px;
+    font-size: 16px;
+    outline: none;
+    border: 1px solid;
+    border-radius: 10px;
+    background: none;
+    color: var(--color-font);
+}
+
+.search::placeholder {
+    font-size: 16px;
+}
+
+.search:focus {
+    border: 2px solid;
+}
+
+@media (max-width: 991px) {
+    .search {
+        align-self: normal;
+        width: auto;
+        margin: 0;
+    }
+}

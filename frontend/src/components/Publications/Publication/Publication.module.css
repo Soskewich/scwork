@@ -1,0 +1,52 @@
+.block {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid;
+    padding: 10px;
+    margin: 15px 0;
+    font-size: 16px;
+    border-radius: 10px;
+}
+
+.block a {
+    text-decoration: none;
+}
+
+.block a:hover {
+    color: #06c895;
+}
+
+.authors {
+    font-size: 16px;
+    padding: 10px;
+    margin: 15px 0;
+    border: 1px solid;
+    border-radius: 10px;
+}
+.organization{
+    display: inline-flex;
+
+}
+.authors a {
+    text-decoration: none;
+}
+
+.authors a:hover {
+    color: #06c895;
+}
+
+.country .city {
+    display: inline-block;
+}
+
+.keywords {
+    display: inline-block;
+}
+
+.theme {
+    color: var(--color-font);
+}
+
+.theme a {
+    color: var(--color-font);
+}

@@ -1,0 +1,11 @@
+.footer {
+    grid-area: footer;
+    font-size: 14px;
+    padding: 10px 20px;
+    border-width: 2px 1px 1px 1px;
+    border-style: solid;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    color: var(--color-font);
+    }
+

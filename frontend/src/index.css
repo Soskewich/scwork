@@ -1,0 +1,53 @@
+@font-face {
+  font-family: 'Aeroport';
+  src: url(./assets/Aeroport.ttf);
+}
+@font-face {
+  font-family: 'Aeroport-Bold';
+  src: url(./assets/Aeroport-Bold.ttf);
+  font-weight: bold;
+}
+@font-face {
+  font-family: 'Aeroport-Medium';
+  src: url(./assets/Aeroport-Medium.ttf);
+}
+@font-face {
+  font-family: "Rajdhani";
+  src: url(./assets/Rajdhani-Regular.ttf);
+}
+
+
+body {
+  width: 100%;
+  margin: 0;
+  font-family: 'Aeroport', 'Rajdhani', --base-font;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  --color-background: #FFFFFF;
+  --color-background-menu: rgba(0, 0, 0, 0.4);;
+  --color-font: #202124;
+  --font-color: #FFFFFF;
+  --filter:invert(0%);
+  --background: #000000;
+  --moon-shadow: 5px 5px 0 0 #202124;
+  --moon-margin: -1em 1em 1em 0;
+}
+
+html[data-theme="dark"] {
+  --color-background: #202124;
+  --color-font: #BDC1C6;
+  --filter:invert(90%);
+  --background: #FFFFFF;
+  --moon-margin: none;
+  --moon-shadow: #BDC1C6;
+  --font-color: #202124;
+}
+
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}

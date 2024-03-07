@@ -1,0 +1,67 @@
+.theme {
+    color: var(--color-font);
+}
+
+.theme a {
+    color: var(--color-font);
+}
+
+.block__image {
+    width: 30%;
+    max-width: 300px;
+    max-height: 300px;
+}
+
+.public {
+
+    display: block;
+    flex-direction: column;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 1px solid;
+    font-size: 16px;
+    border-radius: 10px;
+
+}
+
+.public a {
+    text-decoration: none;
+}
+
+p {
+    margin: 0px;
+}
+
+.public a:hover {
+    color: #06c895;
+}
+
+.block {
+    display: flex;
+    padding-bottom: 15px;
+    font-size: 18px;
+}
+
+
+.block__info {
+    padding: 0px 30px;
+}
+
+.title {
+    padding-bottom: 5px;
+}
+
+img {
+    border-radius: 10px;
+}
+
+.block__text {
+    margin-bottom: 10px;
+}
+
+
+.block__identifiers {
+    margin-bottom: 10px;
+
+}

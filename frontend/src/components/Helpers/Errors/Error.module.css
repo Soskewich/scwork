@@ -1,0 +1,7 @@
+.error {
+    color: var(--color-font);
+    text-align: center;
+    font-size: 50px;
+    font-family: Rajdhani;
+    padding: 25vh;
+}

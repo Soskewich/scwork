@@ -1,0 +1,3 @@
+export const REACT_APP_SITE_KEY = "recaptcha site_key"
+export const DOMAIN = "localhost"
+export const SECURE = true

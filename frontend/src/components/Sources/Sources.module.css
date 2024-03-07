@@ -1,0 +1,70 @@
+.container {
+    display: grid;
+    grid-template-areas:
+            'count search'
+            'filter source'
+            'pagination pagination';
+    grid-auto-columns: 270px 930px;
+    grid-auto-flow: dense;
+    color: var(--color-font);
+}
+
+.container a {
+    color: var(--color-font);
+}
+
+.block {
+    grid-area: source;
+}
+
+.block a {
+    text-decoration: none;
+}
+
+.source {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid;
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 16px;
+    border-radius: 10px;
+}
+
+.size {
+    grid-area: filter;
+    padding-top: 15px;
+}
+
+.size ul {
+    list-style: none;
+    display: inline;
+    padding-inline-start: 0;
+    font-size: 18px;
+}
+
+.size ul li {
+    display: inline-block;
+    padding: 5px;
+}
+
+.size li:active {
+    color: #06c895;
+    font-weight: bold;
+}
+.blockCount{
+    grid-area: count;
+    padding: 5px 10px;
+}
+
+.count{
+    font-size: 24px;
+    color: #06c895;
+}
+
+@media (max-width: 1201px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,3 @@
+DB_ROOT = "db_user"
+DB_PASSWORD = "db_password"
+NGNIX_CONF_PATH = "./nginx/nginx_local.conf"

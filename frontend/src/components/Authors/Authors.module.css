@@ -1,0 +1,66 @@
+.container {
+    display: grid;
+    grid-template-areas:
+            'count search'
+            'filter authors'
+            'pagination pagination';
+    grid-auto-columns: 270px 930px;
+    grid-auto-flow: dense;
+    color: var(--color-font);
+}
+
+.block {
+    grid-area: authors;
+}
+
+.size {
+    grid-area: filter;
+    padding-top: 15px;
+    color: var(--color-font);
+}
+
+.size ul {
+    list-style: none;
+    display: inline;
+    padding-inline-start: 0;
+    font-size: 18px;
+}
+
+.size ul li {
+    display: inline-block;
+    padding: 5px;
+}
+
+.size li:active {
+    color: #06c895;
+    font-family: 'Aeroport-Bold';
+    font-weight: bold;
+}
+
+.blockCount{
+    grid-area: count;
+}
+
+.count{
+    font-size: 24px;
+    color: #06c895;
+}
+
+.ulAuthors{
+    padding-left: 0px;
+}
+
+.ulAuthors li{
+    list-style: none;
+    padding-bottom: 5px;
+}
+
+.ulAuthors li a{
+    font-size: 18px;
+    text-decoration: none;
+    color: black;
+}
+
+.ulAuthors li a:hover{
+    color: #06c895;
+}

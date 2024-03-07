@@ -1,0 +1,210 @@
+.container {
+    grid-area: filter;
+    margin: 10px 10px 0 0;
+    padding-left: 10px;
+    color: var(--color-font);
+
+}
+
+.sort {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.filter {
+    width: 200px;
+    padding-bottom: 10px;
+}
+
+.date {
+    border-radius: 10px;
+    padding: 5px;
+    margin-top: 5px;
+}
+.dataName{
+    border-radius: 10px;
+    padding: 5px;
+    margin-top: 5px;
+    width: 200px;
+}
+
+.sort b {
+    font-weight: normal;
+}
+
+.sort__label {
+    display: flex;
+    align-items: center;
+    padding-bottom: 15px;
+}
+
+.sort__label span {
+    color: #06c895;
+    border-bottom: 1px #06c895;
+    cursor: pointer;
+    border-bottom: 3px solid #06c895;
+}
+
+.sort__popup {
+    position: absolute;
+    left: 0;
+    margin-top: 10px;
+}
+
+.size {
+    padding-top: 10px;
+}
+
+.size ul {
+    list-style: none;
+    display: inline;
+    padding-inline-start: 0;
+    font-size: 18px;
+}
+
+.size ul li {
+    display: inline-block;
+    padding: 5px;
+}
+
+.size li:active {
+    color: #06c895;
+    font-family: 'Aeroport-Bold';
+    font-weight: bold;
+}
+
+.sort ul {
+    list-style: none;
+    position: relative;
+}
+
+.sort ul li {
+    padding: 10px;
+    cursor: pointer;
+}
+
+
+.sort ul li.active:hover {
+    background: #06c895;
+}
+
+.sort ul li:hover {
+    font-weight: normal;
+    color: #06c895;
+}
+
+nav {
+    text-align: center;
+}
+
+
+nav ul li:hover > ul {
+    display: block;
+}
+
+nav ul li {
+    float: left;
+    width: 50%;
+    text-align: left;
+    border-left: 3px solid #06c895;
+}
+
+nav ul li a {
+    display: block;
+    color: #06c895;
+    text-decoration: none;
+}
+
+nav ul {
+    border-radius: 0px;
+    padding: 0;
+    position: absolute;
+    top: 100%;
+}
+
+nav ul ul li {
+    float: none;
+    border-bottom: 2px solid #06c895;
+    position: relative;
+}
+
+nav ul ul li a {
+    padding: 15px 10px;
+    color: #666666;
+}
+
+nav ul ul li a:hover {
+    background: #06c895;
+}
+
+.burger {
+    display: none;
+}
+
+@media (max-width: 991px) {
+    .sort {
+        position: static;
+    }
+
+    .container {
+        margin-right: 0;
+        margin-bottom: 10px;
+        border: 0px;
+        padding-left: 0;
+    }
+
+    .burger {
+        display: block;
+        position: relative;
+        width: 30px;
+        height: 20px;
+        z-index: 3;
+    }
+
+    .burger span {
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        top: 9px;
+        background-color: var(--background);
+    }
+
+    .burger:before,
+    .burger:after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background-color: var(--background);
+    }
+
+    .burger:before {
+        top: 0;
+    }
+
+    .burger:after {
+        bottom: 0;
+    }
+
+    .menu {
+        display: block;
+        position: fixed;
+        left: -150%;
+        transition: all 0.3s ease 0s;
+    }
+
+    .menu.active {
+        top: 0;
+        position: static;
+        border: 1px solid;
+        border-radius: 10px;
+        margin: 15px 0px 0 0;
+        padding-left: 10px;
+    }
+
+    .sort__popup {
+        margin-left: 10px;
+    }
+
+}

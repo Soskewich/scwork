@@ -1,0 +1,18 @@
+.main_container{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+
+.submit{
+    border: 1px solid;
+    border-radius: 10px;
+    padding: 10px;
+    margin:5px 0px;
+    color: var(--color-font);
+    background-color: var(--color-background);
+}
+.container{
+    color: var(--color-font);
+}
+

@@ -1,0 +1,6 @@
+.git
+*.json
+docs
+README.md
+Makefile
+*.exe

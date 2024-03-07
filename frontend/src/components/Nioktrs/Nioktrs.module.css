@@ -1,0 +1,66 @@
+
+.block {
+    display: flex;
+    flex-direction: column;
+    grid-area: publications;
+    margin-top: 10px;
+}
+
+.blocks {
+    border: 1px solid;
+    padding: 10px;
+    margin-bottom: 5px;
+    font-size: 16px;
+    border-radius: 10px;
+}
+
+.block a {
+    text-decoration: none;
+}
+
+.block a:hover {
+    color: #06c895;
+}
+
+.keyword_nioktrs :not(:last-child):after {
+    display: inline-block;
+    content: ', ';
+}
+
+.keyword_nioktr  {
+
+}
+
+
+.container {
+    display: grid;
+    grid-template-areas:
+            'count search'
+            'filter publications'
+            'pagination pagination';
+    grid-auto-columns: 270px 930px;
+    grid-auto-flow: dense;
+
+    color: var(--color-font);
+}
+
+.container a {
+    color: var(--color-font);
+}
+
+.blockCount{
+    grid-area: count;
+    padding: 5px 10px;
+}
+
+.count{
+    font-size: 24px;
+    color: #06c895;
+}
+
+@media (max-width: 991px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+}
